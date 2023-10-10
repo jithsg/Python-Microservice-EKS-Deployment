@@ -38,21 +38,21 @@ spec:
 2. Apply Deployment
 Apply the deployment to your Kubernetes cluster:
 
-bash
+
 
 kubectl apply -f myapp-deployment.yaml
 
 3. Expose the App
 Now, expose your app using the following command:
 
-bash
+
 
 kubectl expose deployment myapp-deployment --type=LoadBalancer --port=80 --target-port=port_your_app_runs_on
 
 4. Verify the Service
 To check that the service is up and to find the external IP:
 
-bash
+
 kubectl get services
 
 
