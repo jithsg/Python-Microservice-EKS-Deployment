@@ -53,7 +53,6 @@ kubectl expose deployment myapp-deployment --type=LoadBalancer --port=80 --targe
 To check that the service is up and to find the external IP:
 
 bash
-
 kubectl get services
 
 
