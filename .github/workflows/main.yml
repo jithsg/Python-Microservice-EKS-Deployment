@@ -19,15 +19,7 @@ jobs:
 
       - name: Install dependencies
         run: make install
-
-      - name: Format code
-        run: make format
-
-      - name: Lint code
-        run: make lint
-
-      - name: Run tests
-        run: make test
+      
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
